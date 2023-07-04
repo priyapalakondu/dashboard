@@ -1,0 +1,51 @@
+.listContainer {
+  border: 1px solid #eee;
+}
+.itemRow {
+  padding: 1rem 0px;
+}
+.itemRow:nth-child(even) {
+  background-color: #eee;
+}
+.colorBlob {
+  width: 40px;
+  height: 80px;
+  border-radius: 0px 150px 150px 0px;
+  background-color: red;
+  margin-left: -10px;
+}
+.colorBlobDiv {
+  max-width: 60px;
+}
+
+.myTooltip > .tooltip-inner {
+  max-width: 500px !important;
+  border-radius: 0 !important;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.tooltipTrigger {
+  cursor: pointer;
+}
+
+.btn-custom {
+  width: 160px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: red;
+  color: #fff;
+}
