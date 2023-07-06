@@ -1,8 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App test suit", function () {
+    let root;
+    beforeEach(() => {
+        root = render(<App />);
+    });
+    test("App should not be empty", async () => {
+        const { container } = root;
+        expect(container).not.toBeEmptyDOMElement();
+    });
+    test("App should contain Dashboard component", async () => {
+        const { container } = root;
+        expect(container.getElementsByClassName("dashboard")[0]).toBeInTheDocument();
+    });
 });
